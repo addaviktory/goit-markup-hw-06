@@ -873,7 +873,6 @@ div.input-control:focus-within {
 
 /* ///////////////TEXTAREA/////////////// */
 
-
 div.form-control > textarea {
   width: 100%;
   height: 120px;
@@ -906,40 +905,39 @@ div.form-control > textarea::placeholder {
 
 /* /////////////CHECKBOX////////////////////// */
 
-.checkbox-container{
+.checkbox-container {
   position: relative;
   margin-top: 20px;
 }
-.form-checkbox{
-appearance: none;
+.form-checkbox {
+  appearance: none;
 }
 
-.terms-checkbox{
+.terms-checkbox {
   position: relative;
   font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--description-gray);
-padding-left: 33px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--description-gray);
+  padding-left: 33px;
 }
 
-
-.terms-checkbox::before{
-position: absolute;
-content: '';
-top: 50%;
-transform: translateY(-50%);
-left: 13px;
-width: 16px;
-height: 15px;
-border: 2px solid var(--black-text);
-border-radius: 2px;
-}
-
-.terms-checkbox::after{
+.terms-checkbox::before {
   position: absolute;
-  content: '';
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black-text);
+  border-radius: 2px;
+}
+
+.terms-checkbox::after {
+  position: absolute;
+  content: "";
   top: 50%;
   transform: translateY(-50%);
   left: 13px;
@@ -950,27 +948,29 @@ border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  }
-  .form-checkbox:focus + .terms-checkbox::before{
-    border-color: var(--blue)
-  }
-  .form-checkbox:checked + .terms-checkbox::after{
-    opacity: 1;
-  }
+}
+.form-checkbox:focus + .terms-checkbox::before {
+  border-color: var(--blue);
+}
+
+.form-checkbox:checked + .terms-checkbox::after {
+  opacity: 1;
+}
+
 .terms-checkbox > a {
-    color: var(--blue);
-  }
+  color: var(--blue);
+}
 .terms-checkbox > svg {
-    width: 11px;
-    height: 8px;
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: var(--title-white);
-    z-index: 1;
-    cursor: pointer;
-  }
-.terms-checkbox:focus > svg{
+  width: 11px;
+  height: 8px;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--title-white);
+  z-index: 1;
+  cursor: pointer;
+}
+.terms-checkbox:focus > svg {
   background-color: var(--blue);
 }
