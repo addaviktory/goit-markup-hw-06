@@ -440,83 +440,99 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form-control" name="telegram-link">
+          <p class="footer-telegram-text">Підпишіться на розсилку</p>
+          <div class="link-telegram-control">
+            <input
+              class="footer-email-input"
+              type="text"
+              placeholder="E-mail"
+              name="user-email-soc-link"
+            />
+            <button class="button-telegram-link" type="submit">
+              Підписатися
+              <svg>
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-button" type="button" data-modal-close>
-          <svg class="icon-close-button">
-            <use href="./images/icons.svg#icon-close-button"></use>
-          </svg>
-        </button>
-        <div class="form-container">
-          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-          <form name="contact-form">
-            <label class="form-label" for="person-name">Ім'я</label>
-            <div class="form-control">
-              <input
-                class="form-input"
-                id="person-name"
-                name="person-name"
-                type="text"
-              />
-              <svg class="form-icon">
-                <use href="./images/icons.svg#icon-user-name"></use>
+        <form name="contact-form">
+          <div class="modal-header">
+            <button class="modal-close-button" type="button" data-modal-close>
+              <svg class="icon-close-button">
+                <use href="./images/icons.svg#icon-close-button"></use>
               </svg>
-            </div>
-            <label class="form-label" for="person-phone">Телефон</label>
+            </button>
+            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          </div>
+          <div class="modal-main">
             <div class="form-control">
-              <input
-                class="form-input"
-                id="person-phone"
-                name="person-phone"
-                type="tel"
-              />
-              <svg class="form-icon">
-                <use href="./images/icons.svg#icon-user-phone"></use>
-              </svg>
+              <label for="person-name">Ім'я</label>
+              <div class="input-control">
+                <input id="person-name" name="person-name" type="text" />
+                <div class="prefix-icon">
+                  <svg>
+                    <use href="./images/icons.svg#icon-user-name"></use>
+                  </svg>
+                </div>
+              </div>
             </div>
-            <label class="form-label" for="person-email">Пошта</label>
             <div class="form-control">
-              <input
-                class="form-input"
-                id="person-email"
-                name="person-email"
-                type="email"
-              />
-              <svg class="form-icon">
-                <use href="./images/icons.svg#icon-user-email"></use>
-              </svg>
+              <label for="person-phone">Телефон</label>
+              <div class="input-control">
+                <input id="person-phone" name="person-phone" type="tel" />
+                <div class="prefix-icon">
+                  <svg>
+                    <use href="./images/icons.svg#icon-user-phone"></use>
+                  </svg>
+                </div>
+              </div>
             </div>
-            <label class="form-label" for="person-comment">Коментар</label>
-            <textarea 
-            class="form-textarea" 
-            id="person-comment" 
-            name="person-comment" 
-            placeholder="Введіть текст"
-            ></textarea>
+            <div class="form-control">
+              <label for="person-email">Пошта</label>
+              <div class="input-control">
+                <input id="person-email" name="person-email" type="email" />
+                <div class="prefix-icon">
+                  <svg>
+                    <use href="./images/icons.svg#icon-user-email"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="person-comment">Коментар</label>
+                <textarea
+                id="person-comment"
+                name="person-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
             <div class="checkbox-container">
               <input
-              class="form-checkbox visually-hidden"
-              type="checkbox"
-              id="terms-checkbox"
-              name="terms-checkbox"
+                class="form-checkbox visually-hidden"
+                type="checkbox"
+                id="terms-checkbox"
+                name="terms-checkbox"
               />
               <label for="terms-checkbox" class="terms-checkbox">
                 Погоджуюся з розсилкою та приймаю
-                <a class="accept-contract-text" href="#">Умови договору</a>
-                <svg class="icon-verification">
-                  <use href="./images/icons.svg#icon-verification"></use>
-                </svg>
+                <a href="#">Умови договору</a>
+                  <svg>
+                    <use href="./images/icons.svg#icon-verification"></use>
+                  </svg>
               </label>
             </div>
-            <div class="button-submit-form">
-              <button class="button-submit-info" type="submit">
-                Відправити
-              </button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button-submit-info" type="submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
